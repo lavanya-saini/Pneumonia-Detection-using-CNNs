@@ -1,1 +1,8 @@
-# Pneumonia-Detection-using-Deep-Learning
+# Pneumonia-Detection-using-CNNs
+Pneumonia is a severe infectious disease that significantly affects breathing and respiration, particularly in young children. This disease is often characterized by the accumulation of fluid or pus in the alveoli of the lungs, leading to breathing difficulties. The causative agents for pneumonia include bacteria, viruses, and fungi, which, if left untreated, can lead to long-term complications or even death. Globally, pneumonia is responsible for a large percentage of deaths among children under five, despite advances in medical interventions and treatments.
+
+##Project Overview 
+This repository focuses on developing a Pneumonia Detection System using Convolutional Neural Networks (CNNs), particularly the VGG-16 model, to identify pneumonia from chest X-ray images. The project aims to automate and improve the accuracy of pneumonia diagnosis, which is crucial for saving lives through early detection.
+
+##Architecture 
+The Pneumonia Detection Model uses the **VGG-16** architecture, which consists of 13 convolutional layers with 3x3 filters, arranged in 5 blocks. Each block is followed by max-pooling layers to reduce spatial dimensions while preserving important features. The convolutional layers progressively increase the number of filters (64, 128, 256, 512), allowing the network to capture complex patterns in chest X-ray images. The extracted features are then passed to three fully connected layers (4096, 4096, 2 neurons), with softmax activation at the output for binary classification (pneumonia vs. normal). ReLU activation is used throughout, and optional dropout or batch normalization can be added to improve training. Transfer learning on pre-trained VGG-16 helps boost performance.
